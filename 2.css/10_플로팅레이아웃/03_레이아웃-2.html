@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>레이아웃</title>
+  <style>
+    *{ margin: 0; padding: 0; box-sizing: border-box;}
+    li{list-style: none;}
+
+    .header,
+    .footer{
+      background-color: black;
+      color: white;
+      padding: 20px;
+    }
+
+    .container .nav {width: 25%;}
+    .container .content {width: 75%;}
+
+    .container .nav ul li {
+      background-color: #3cf;
+      color: white;
+      padding: 10px;
+      border-bottom: 1px solid #eee;
+    }
+    .container .nav,
+    .container .content{
+      float: left; padding: 10px;
+    }
+    .clear:after{
+      content: '';
+      display: block;
+      clear: both;
+    }
+    .container .nav ul li hover{
+      background-color: #9af;
+    }
+  </style>
+  <style>
+    #wrap{
+      width: 1000px;
+      margin: 0 auto;
+    }
+  </style>
+</head>
+<body>
+  <div id="wrap">
+    <div class="header">
+      <h1>LOGO</h1>
+    </div>
+    <div class="container clear">
+      <div class="nav">
+        <ul>
+          <li>메뉴1</li>
+          <li>메뉴2</li>
+          <li>메뉴3</li>
+          <li>메뉴4</li>
+        </ul>
+      </div>
+
+      <div class="content">
+        <h2>제목/슬로건</h2>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore inventore, nam facere velit eveniet odit laborum laudantium reiciendis quos dolore ipsam recusandae explicabo voluptatibus animi modi ab itaque debitis tenetur?</p>
+        <p>Laborum, quas. Laudantium nostrum qui quae consequatur nulla alias iusto consectetur, at ipsum voluptatem illum necessitatibus sint atque incidunt impedit quo ducimus ut debitis quidem iste provident fuga sapiente excepturi.</p>
+      </div>
+    </div>
+
+    <div class="footer">
+      <h3>&copy; myLayout</h3>
+    </div>
+  </div>
+</body>
+</html>

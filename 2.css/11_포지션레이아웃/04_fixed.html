@@ -1,0 +1,32 @@
+조상 요소로 올라가면서<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>포지션</title>
+  <style>
+    * {margin: 0; padding: 0;}
+    body{
+      background-image: url('http://wooreeweb.com/img/grid.gif')
+    }
+    p{
+      height: 50px;
+      background-color: rgba(255, 215, 0, 0.3);
+    }
+    .box{ 
+      width: 200px; height: 150px;
+      background-color: rgba(220, 20, 60, 0.4);
+    }
+    .box{ 
+      bottom: 0px;
+      right: 0px;
+      position: fixed;
+    }
+    body{height: 3000px;}
+  </style>
+</head>
+<body>
+  <p>블록 요소 p</p>
+  <div class="box">.box</div>
+</body>
+</html>
