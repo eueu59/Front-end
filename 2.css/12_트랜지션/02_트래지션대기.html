@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>트래지션</title>
+  <link rel="stylesheet" href="css/common.css">
+  <style>
+    .wrap{
+      width: 400px; height: 600px;
+      border: 1px solid silver;
+    }
+    .wrap:hover > div{
+      width: 400px;
+      background-color: crimson;
+    }
+    div{transition: all 3s;}
+  </style>
+  <style>
+    .box1{ transition-delay: 0s;}
+    .box2{ transition-delay: 1s;}
+    .box3{ transition-delay: 2s;}
+    .box4{ transition-delay: 3s;}
+    .box5{ transition-delay: 4s;}
+    .box6{ transition-delay: 5s;}
+  </style>
+</head>
+<body>
+  <secin class="wrap">
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+    <div class="box4"></div>
+    <div class="box5"></div>
+    <div class="box6"></div>
+  </secin>
+</body>
+</html>
